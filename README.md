@@ -3,6 +3,10 @@ iCade Unity
 
 Add iCade controller support to your Unity iOS project. Includes a C# script for detecting buttons.
 
+Videos: 
+Scripting in Unity: http://www.youtube.com/watch?v=za2qROUvrEU
+Setting up in Xcode: http://www.youtube.com/watch?v=arBIwQDEERU
+
 Usage
 -----
 Create an empty object in your Unity scene called iCadeObject. Add ICade.cs script to the object. Other scripts can check for iCade button presses via ICade.instance.isDown(string name), ICade.instance.justPressed(string name), ICade.instance.justReleased(string name).
