@@ -14,8 +14,8 @@
 	iCadeReaderView *iCadeReader = [[iCadeReaderView alloc] initWithFrame:CGRectZero];
 	iCadeUnityLink *iCade = [[iCadeUnityLink alloc] init];
 	[iCadeReader setDelegate:iCade];
-	[iCadeReader setActive:YES];
 	[application.keyWindow.rootViewController.view addSubview:iCadeReader];
+	[iCadeReader setActive:YES];
 	[iCadeReader release];
 	[iCade release];
 }
