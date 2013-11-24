@@ -1,17 +1,14 @@
 iCade Unity
 =======================
 
-Add iCade controller support to your Unity iOS/Android project. Includes a C# script for detecting buttons.
+Add iCade controller support to your Unity iOS project. Includes a C# script for detecting buttons.
 
-Videos: 
-Scripting in Unity: http://www.youtube.com/watch?v=za2qROUvrEU
-Setting up in Xcode: http://www.youtube.com/watch?v=arBIwQDEERU
 
 Usage
 -----
-Create an empty object in your Unity scene called iCadeObject. Add ICade.cs script to the object. Other scripts can check for iCade button presses via ICade.instance.isDown(string name), ICade.instance.justPressed(string name), ICade.instance.justReleased(string name).
-
 In your Xcode project, add the files that begin with iCade to the Classes folder. Open AppController.mm from this repo, and copy/paste the lines of code to the correct places in the Unity generated AppController.mm of your project.
+
+In MonoDevelop, simply use Input.GetKeyDown(KeyCode.JoystickButton#)), Input.GetKeyUp(KeyCode.JoystickButton#)) or Input.GetKey(KeyCode.JoystickButton#)). The corresponding button numbers are shown in iCade8-bitty.png.
 
 ----
 

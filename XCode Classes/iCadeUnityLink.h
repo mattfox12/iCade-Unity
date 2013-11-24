@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "iCadeReaderView.h"
 
-@interface iCadeUnityLink : NSObject <iCadeEventDelegate>
+@interface iCadeUnityLink : NSObject <iCadeEventDelegate> {
+	int joystickNum;
+}
 
 @end
