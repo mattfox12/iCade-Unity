@@ -1,7 +1,7 @@
 iCade Unity
 =======================
 
-Add iCade controller support to your Unity iOS project. Includes a C# script for detecting buttons.
+Add iCade controller support to your Unity iOS project.
 
 
 Usage
