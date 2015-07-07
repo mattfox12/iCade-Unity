@@ -51,10 +51,6 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
-	
-	[_delegate release];
-	
-    [super dealloc];
 }
 
 - (void)didEnterBackground {
@@ -91,7 +87,7 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
 }
 
 - (void)setDelegate:(id<iCadeEventDelegate>)delegate {
-    _delegate = [delegate retain];
+    _delegate = delegate;
     if (!_delegate) return;
     
     _delegateFlags.stateChanged = [_delegate respondsToSelector:@selector(stateChanged:)];

@@ -60,7 +60,7 @@
 }
 
 @property (nonatomic, assign) iCadeState iCadeState;
-@property (nonatomic, retain) id<iCadeEventDelegate> delegate;
+@property (nonatomic, strong) id<iCadeEventDelegate> delegate;
 @property (nonatomic, assign) BOOL active;
 
 @end

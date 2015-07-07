@@ -16,6 +16,4 @@
 	[iCadeReader setDelegate:iCade];
 	[application.keyWindow.rootViewController.view addSubview:iCadeReader];
 	[iCadeReader setActive:YES];
-	[iCadeReader release];
-	[iCade release];
 }
